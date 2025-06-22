@@ -33,7 +33,7 @@ so you only extract the content you actually need.
 ## Running the Server
 
 ```bash
-deno run --allow-net server.ts
+deno run --allow-net jsr:@sigma/scrap-mcp
 ```
 
 ## MCP Tool Reference
