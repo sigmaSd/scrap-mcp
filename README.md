@@ -203,7 +203,7 @@ All errors are returned as readable text messages through the MCP protocol.
 
 ```bash
 # Ensure all required permissions are granted
-deno run --allow-net server.ts
+deno run --allow-net jsr:@sigma/scrap-mcp
 ```
 
 **"No elements found" with valid selector:**
