@@ -1,5 +1,6 @@
 {
   "name": "@sigma/scrap-mcp",
   "version": "1.0.0",
-  "exports": "./server.ts"
+  "exports": "./server.ts",
+  "license": "MIT"
 }

@@ -27,7 +27,7 @@ jobs:
 
       - name: Verify formatting
         if: runner.os == 'Linux'
-        run: deno fmt --ignore=README.md --check
+        run: deno fmt --check
 
       - name: Run linter
         if: runner.os == 'Linux'
