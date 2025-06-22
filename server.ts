@@ -1,7 +1,7 @@
-import { McpServer } from "npm:@modelcontextprotocol/sdk@1.13.0/server/mcp.js";
-import { StdioServerTransport } from "npm:@modelcontextprotocol/sdk@1.13.0/server/stdio.js";
-import { z } from "npm:zod@3.24.2";
-import { DOMParser } from "jsr:@b-fuze/deno-dom@0.1.49";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+import { DOMParser } from "@b-fuze/deno-dom";
 
 // Create an MCP server
 const server = new McpServer({

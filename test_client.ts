@@ -1,5 +1,3 @@
-#!/usr/bin/env -S deno run --allow-net --allow-read --allow-write --allow-run
-
 import { Client } from "npm:@modelcontextprotocol/sdk@1.13.0/client/index.js";
 import { StdioClientTransport } from "npm:@modelcontextprotocol/sdk@1.13.0/client/stdio.js";
 

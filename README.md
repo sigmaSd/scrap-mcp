@@ -1,7 +1,7 @@
 # Web Scraper MCP Server
 
-A Deno-based MCP (Model Context Protocol) server that can scrape web pages and
-extract content using CSS selectors. Built with deno-dom for fast HTML parsing.
+An MCP (Model Context Protocol) server that can scrape web pages and extract
+content using CSS selectors. Built with deno-dom for fast HTML parsing.
 
 ## Why
 
@@ -10,7 +10,8 @@ page directly often returns a lot of unnecessary content. This not only confuses
 the LLM, but also quickly fills up the context window.
 
 That's where this MCP comes in—it enables targeted scraping using CSS selectors,
-so you only extract the content you actually need.
+so you only extract the content you actually need. It's built to work seamlessly
+across various JavaScript runtimes like Deno, Node.js, and Bun.
 
 ## Example from Zed
 
@@ -33,7 +34,7 @@ so you only extract the content you actually need.
 ## Running the Server
 
 ```bash
-deno run --allow-net jsr:@sigma/scrap-mcp
+deno run --allow-net jsr:@sigma/scrap-mcp # or node or bun
 ```
 
 ## MCP Tool Reference
@@ -182,7 +183,7 @@ All errors are returned as readable text messages through the MCP protocol.
 - **Respect robots.txt**: Always check the target site's robots.txt file
 - **Add delays**: Use reasonable delays between requests to avoid overwhelming
   servers
-- **User-Agent**: The scraper uses Deno's default User-Agent
+- **User-Agent**: The scraper uses the JavaScript runtime's default User-Agent
 
 ## Security
 

@@ -1,0 +1,25 @@
+{
+  "name": "@sigma/scrap-mcp",
+  "version": "1.0.2",
+  "description": "Web scraping MCP server",
+  "main": "server.ts",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@b-fuze/deno-dom": "npm:@jsr/b-fuze__deno-dom",
+    "@modelcontextprotocol/sdk": "^1.13.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0"
+  },
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun --watch server.ts",
+    "start:node": "tsx server.ts",
+    "dev:node": "tsx --watch server.ts"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
