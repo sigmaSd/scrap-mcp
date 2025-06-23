@@ -1,7 +1,7 @@
 # Web Scraper MCP Server
 
-A Deno-based MCP (Model Context Protocol) server that can scrape web pages and
-extract content using CSS selectors. Built with deno-dom for fast HTML parsing.
+An MCP (Model Context Protocol) server that can scrape web pages and extract
+content using CSS selectors. Built with deno-dom for fast HTML parsing.
 
 ## Why
 
@@ -34,6 +34,16 @@ so you only extract the content you actually need.
 
 ```bash
 deno run --allow-net jsr:@sigma/scrap-mcp
+```
+
+You can also run this with Bun and Node.js using `bunx` and `npx` respectively:
+
+```bash
+bunx xjsr @sigma/scrap-mcp
+```
+
+```bash
+npx xjsr @sigma/scrap-mcp
 ```
 
 ## MCP Tool Reference
