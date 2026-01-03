@@ -34,6 +34,7 @@ server.registerTool("scrape_page", {
     }
 
     const html = await response.text();
+    console.error("resp", html);
 
     // Parse the HTML with deno-dom
     const parser = new DOMParser();
@@ -47,6 +48,7 @@ server.registerTool("scrape_page", {
         }],
       };
     }
+    console.error("called");
 
     // Query all elements matching the selector
     const elements = doc.querySelectorAll(query_selector);

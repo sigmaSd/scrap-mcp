@@ -39,11 +39,11 @@ deno run --allow-net jsr:@sigma/scrap-mcp
 You can also run this with Bun and Node.js using `bunx` and `npx` respectively:
 
 ```bash
-bunx xjsr @sigma/scrap-mcp
+bunx rjsr @sigma/scrap-mcp
 ```
 
 ```bash
-npx xjsr @sigma/scrap-mcp
+npx rjsr @sigma/scrap-mcp
 ```
 
 ## MCP Tool Reference

@@ -35,8 +35,9 @@ async function testMCPServer() {
     console.log("✅ Connected successfully!\n");
 
     // Test the specific TunisiaNet URL and selector
-    const testUrl = "https://www.tunisianet.com.tn/732-full-setup-gamer?page=1";
-    const testSelector = ".wb-product-desc";
+    const testUrl =
+      "https://www.mytek.tn/electromenager/cafe-et-petit-dejeuner/bouilloire.html?p=1";
+    const testSelector = ".card-body";
 
     console.log("🧪 Running test:");
     console.log(`   URL: ${testUrl}`);
